@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | MSCS Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-900 text-slate-100 leading-relaxed">
+
+    <nav class="fixed w-full z-50 glass">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="text-xl font-bold tracking-tighter text-blue-400">DEV.IO</span>
+            <div class="space-x-8 text-sm font-medium uppercase tracking-widest hidden md:flex">
+                <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">Software Engineer<span class="text-blue-500">.</span></h1>
+            <p class="text-xl text-slate-400 max-w-2xl mb-8">
+                M.S. in Computer Science graduate from USF, specializing in scalable backend systems and full-stack
+                development.
+            </p>
+            <div class="flex gap-4">
+                <a href="mailto:your.email@example.com"
+                    class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition">Get In Touch</a>
+                <a href="#" class="glass px-6 py-3 rounded-lg font-semibold hover:bg-slate-800 transition">View
+                    Resume</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-20 px-6 bg-slate-800/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> Experience
+            </h2>
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-500 rounded-full"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold">Software Engineering Intern</h3>
+                        <span class="text-blue-400 font-mono">TikTok</span>
+                    </div>
+                    <p class="text-slate-400 mb-4">Developed high-concurrency backend services using **Go** and
+                        optimized search indexing with **Elasticsearch**.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold">Software Engineering Intern</h3>
+                        <span class="text-blue-400 font-mono">Walnut AI</span>
+                    </div>
+                    <p class="text-slate-400 mb-4">Architected data pipelines and microservices using **Python** and
+                        **AWS** cloud infrastructure.</p>
+                </div>
+
+                <div class="relative pl-8 border-l-2 border-slate-700">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-slate-700 rounded-full"></div>
+                    <div class="flex flex-wrap justify-between items-start mb-2">
+                        <h3 class="text-2xl font-semibold">Software Developer Intern</h3>
+                        <span class="text-blue-400 font-mono">SF Dev Shop</span>
+                    </div>
+                    <p class="text-slate-400 mb-4">Built responsive web applications with **Next.js** and managed
+                        relational data via **PostgreSQL**.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> Skills
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="glass p-6 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-python text-blue-400 text-2xl mb-4"></i>
+                    <h4 class="font-bold">Languages</h4>
+                    <p class="text-slate-400 text-sm">Java, Python, Go, SQL</p>
+                </div>
+                <div class="glass p-6 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-react text-blue-400 text-2xl mb-4"></i>
+                    <h4 class="font-bold">Frontend</h4>
+                    <p class="text-slate-400 text-sm">React.js, Next.js, Tailwind CSS</p>
+                </div>
+                <div class="glass p-6 rounded-xl hover:border-blue-500/50 transition">
+                    <i class="fa-brands fa-node-js text-blue-400 text-2xl mb-4"></i>
+                    <h4 class="font-bold">Backend</h4>
+                    <p class="text-slate-400 text-sm">Node.js, PostgreSQL, Elasticsearch</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-6 bg-slate-800/50">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 flex items-center">
+                <span class="w-8 h-1 bg-blue-500 mr-4"></span> Education
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass p-8 rounded-2xl">
+                    <span class="text-blue-400 font-mono text-sm uppercase">Master of Science</span>
+                    <h3 class="text-xl font-bold mt-2">Computer Science</h3>
+                    <p class="text-slate-300">University of San Francisco</p>
+                    <p class="text-slate-500 mt-4 italic">GPA: 3.7/4.0</p>
+                </div>
+                <div class="glass p-8 rounded-2xl border-transparent">
+                    <span class="text-slate-500 font-mono text-sm uppercase">Bachelor of Science</span>
+                    <h3 class="text-xl font-bold mt-2">Computer Science</h3>
+                    <p class="text-slate-300">University of Colorado Boulder</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-500 border-t border-slate-800">
+        <p>&copy; 2026 | Built with Tailwind CSS</p>
+    </footer>
+
+</body>
+
+</html>
