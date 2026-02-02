@@ -1,0 +1,23 @@
+name: Release and Deploy
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v3
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+      - name: Bump Version and Generate Changelog
+        run: |
+          npm install
+          npx standard-version
+          git push --follow-tags origin main
